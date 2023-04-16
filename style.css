@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.search-form-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#searchInput {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  background-color: #f1f1f1;
+}
+
+#searchBtn {
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #FF6347;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: #fff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  background-color: #FF6347;
+}
+
+/* Style for recipe list */
+#recipe-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#recipe-list li {
+  padding: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#recipe-list li:hover {
+  background-color: #f4f4f4;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-bottom: 5px;
+}
+
+/* Style for recipe details container */
+#recipeDetailsContainer {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+#recipeDetailsContainer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#recipeDetailsContainer h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#recipeDetailsContainer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#recipeDetailsContainer ul li {
+  margin-bottom: 5px;
+}
+
+/* Style for most watched, most recent, and most popular buttons */
+.most_watched, .most_recent, .most_popular {
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.most_watched:hover, .most_recent:hover, .most_popular:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+  #recipe-list li {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  #recipeDetailsContainer {
+    padding: 10px;
+  }
+
+  #recipeDetailsContainer h2 {
+    font-size: 20px;
+  }
+
+  #recipeDetailsContainer h3 {
+    font-size: 16px;
+  }
+}
